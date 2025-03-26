@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: cloudProduct  # 服务名称
+  profiles:
+    active: local
+  cloud:
+    nacos:
+      server-addr: localhost:8848 # Nacos地址
+      discovery:
+        namespace: 128e19a0-bec8-421c-959a-a3279777da14
+        username: nacos
+        password: nacos
+        group: DEFAULT_GROUP
+      config:
+        file-extension: yaml # 文件后缀名
+        namespace: 128e19a0-bec8-421c-959a-a3279777da14
+        group: DEFAULT_GROUP
+        username: nacos
+        password: nacos
